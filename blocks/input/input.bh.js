@@ -1,5 +1,3 @@
-// empty, disabled, focused, invalid
-//size: xs, s, m, l;
 module.exports = function(bh) {
     bh.match('input', function(ctx, json) {
         ctx.mod('empty', !json.value && json.value !== 0);
