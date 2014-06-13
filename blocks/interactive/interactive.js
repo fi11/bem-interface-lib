@@ -25,7 +25,6 @@ modules.define('interactive', ['i-bem__dom'], function(provide, BEMDOM) {
 
         _onClick: function() {
             this.emit('click');
-            this._focused || this.focus();
         }
 
     },
