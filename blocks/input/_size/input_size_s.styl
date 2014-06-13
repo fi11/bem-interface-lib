@@ -1,0 +1,38 @@
+.input_size_s
+    .input__control, .input__placeholder, .input__tel-code
+        padding: 14px 18px
+        adjust-font-size: 13px
+
+    .input__label
+        top: 5px
+        adjust-font-size: 9px
+        padding: 0 18px
+
+    &.input_empty
+        .input__label
+            top: 0
+
+    &.input_type_tel
+        .input__placeholder, .input__control
+            padding-left: 38px
+
+    .input__clear
+        width: 10px
+        height: 10px
+        right: 9px
+        top: 12px
+
+    &.input_hasClear, &.input_hasArrow
+        .input__control
+            padding-right: 32px
+
+    .select__popup
+        .menu-item
+            padding: rhythm(.5) 20px
+            adjust-font-size: 13px
+
+    .down-arrow
+        width: 12px
+        height: 5px
+        right: 15px
+        top: 21px

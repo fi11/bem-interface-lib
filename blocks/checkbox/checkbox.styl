@@ -1,0 +1,25 @@
+.checkbox
+    display: inline-block
+    position: relative
+    user-select: none
+
+    .checkbox__label
+        display: inline-block
+        vertical-align: middle;
+        line-height: 1
+
+
+    .checkbox__tick
+        visibility: hidden
+        position: absolute
+        top: 0
+        left: 0
+
+    &.checkbox_checked
+        .checkbox__tick
+            visibility: visible
+
+    .checkbox__control
+        position: absolute
+        z-index: -1
+        left: -999em

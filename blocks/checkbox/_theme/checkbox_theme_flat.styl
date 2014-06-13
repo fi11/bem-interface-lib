@@ -1,0 +1,24 @@
+.checkbox
+    &.checkbox_theme_flat
+        cursor: pointer
+
+        &::before
+            content: ''
+            position: absolute
+            background: #ecf0f1
+            height: 100%
+            top: 0
+            left: 0
+
+        &.checkbox_focused
+            &::after
+                content: ''
+                position: absolute
+                background: #fc0
+                width: 1px
+                height: 100%
+                top: 0
+                left: 0
+
+    .checkbox__label
+        cursor: pointer

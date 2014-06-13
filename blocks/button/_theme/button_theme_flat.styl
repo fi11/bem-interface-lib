@@ -1,0 +1,69 @@
+.button
+    &.button_theme_flat
+        background: #ecf0f1
+        border: 0
+        transition: background-color .5s
+        cursor: pointer
+
+        &.button_hovered
+            background: darken(#ecf0f1, 5)
+
+        &.button_focused
+            &::after
+                content: ''
+                position: absolute
+                background: darken(#ecf0f1, 10)
+                width: 100%
+                height: 2px
+                bottom: 0
+                left: 0
+                display: block
+
+        &.button_pressed
+            &::after
+                content: ''
+                position: absolute
+                background: darken(#ecf0f1, 15)
+                width: 100%
+                height: 2px
+                bottom: 0
+                left: 0
+                display: block
+
+    &.button_theme_flat
+        &.button_color_accept
+            border: 0
+            color: #fff
+            background: #1abc9c
+
+            &.button_hovered
+                background: lighten(#1abc9c, 5)
+
+            &.button_focused
+                &::after
+                    background: darken(#1abc9c, 10)
+                    height: 3px
+
+            &.button_pressed
+                &::after
+                    background: darken(#1abc9c, 20)
+                    height: 3px
+
+    &.button_theme_flat
+        &.button_color_decline
+            border: 0
+            color: #fff
+            background: #c0392b
+
+            &.button_hovered
+                background: lighten(#c0392b, 5)
+
+            &.button_focused
+                &::after
+                    background: darken(#c0392b, 10)
+                    height: 3px
+
+            &.button_pressed
+                &::after
+                    background: darken(#c0392b, 20)
+                    height: 3px

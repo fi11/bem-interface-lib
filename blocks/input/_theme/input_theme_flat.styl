@@ -1,0 +1,51 @@
+.input
+    &.input_theme_flat
+        &.input_focused
+            &::after
+                content: ''
+                position: absolute
+                background: #fc0
+                width: 2px
+                height: 100%
+                top: 0
+                left: -1px
+
+        .input__label
+            transition: opacity .2s, top .2s
+
+        .input__placeholder
+            transition: color .3s
+
+        .input__clear
+            transition: opacity .2s
+            border: 5px solid transparent
+
+        .select__popup
+            margin-top: 7px
+            margin-left: -1px
+            min-width: 100%
+            visibility: visible
+            opacity: 100
+            transition: margin .3s, opacity .3s
+
+            &.popup_hide
+                margin-top: 20px
+                visibility: hidden
+                opacity: 0
+
+            .menu-item
+                position: relative
+                cursor: pointer
+
+                &.menu-item_hovered
+                    background-color: #eee
+
+                &.menu-item_hovered, &.menu-item_checked
+                    &::after
+                        content: ''
+                        position: absolute
+                        background: #ccc
+                        width: 2px
+                        height: 100%
+                        top: 0
+                        left: 0

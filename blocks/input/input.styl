@@ -1,0 +1,77 @@
+.input
+    position: relative
+    display: inline-block
+    border: 1px solid #c1c1c1
+    font-family: $FONT
+    font-weight: 300
+    user-select: none
+
+    .input__control
+        display: block
+        position: relative
+        margin: 0;
+        padding 0;
+        border: 0;
+        outline: none;
+        background: none;
+        resize: none;
+
+        /* лишние отступы у текста */
+        &::-webkit-search-decoration
+            -webkit-appearance: none
+
+        /* нативный крестик */
+        &::-webkit-search-cancel-button
+            display: none
+
+        &::-webkit-input-placeholder
+            color: #999
+            text-indent: 0
+
+        &::-moz-placeholder
+            opacity: 1
+            color: #999
+
+        &::-ms-clear
+            display: none
+
+    .input__placeholder, .input__label, .input__tel-code
+        position: absolute
+        top: 0
+        left: 0
+
+    .input__placeholder
+        color: #b8b8b8
+
+    .input__label
+        color: #ccc
+
+    .input__clear
+        position: absolute
+        top: 0
+        right: 0
+        opacity: .3
+        cursor: pointer
+
+        &:hover
+            opacity: 1
+
+    &.input_empty
+        .input__clear, .input__label
+            opacity: 0
+
+        .input__placeholder
+            visibility: visible
+
+    .input__placeholder
+        visibility: hidden
+
+    &.input_focused
+        .input__placeholder
+            color: #dfdfdf
+
+    .down-arrow
+        position: absolute
+        opacity: .6
+
+
