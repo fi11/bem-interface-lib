@@ -3,6 +3,7 @@
 node_modules
 *.lnk
 npm-debug.log
+.bower.json
 libs
 
 examples/*/*

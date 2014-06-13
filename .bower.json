@@ -1,0 +1,20 @@
+{
+  "name": "bem-interface-lib",
+  "description": "",
+  "bugs": "",
+  "dependencies": {
+    "bem-core": "v2.2.2",
+    "bem-stylus-lib": "https://github.com/fi11/bem-stylus-lib.git"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/fi11/bem-interface-lib",
+  "_release": "69c736bcfa",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "69c736bcfac0feba14198f516c1210ad92d26218"
+  },
+  "_source": "https://github.com/fi11/bem-interface-lib.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/fi11/bem-interface-lib.git"
+}
